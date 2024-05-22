@@ -19,4 +19,3 @@ if __name__ == "__main__":
     publish_message()
 EOL
 chmod +x /home/ec2-user/publish_to_sns.py
-(crontab -l 2>/dev/null; echo "* * * * * /usr/bin/python3 /home/ec2-user/publish_to_sns.py") | crontab -
