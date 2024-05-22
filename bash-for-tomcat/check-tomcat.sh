@@ -39,3 +39,4 @@ chmod +x /home/ec2-user/check_tomcat.sh
 # https://stackoverflow.com/questions/43405653/how-to-grep-tomcat-pid-in-shell
 # https://archive.apache.org/dist/tomcat/tomcat-9/
 # https://tecadmin.net/install-tomcat-9-on-centos-8/
+# https://stackoverflow.com/questions/54431949/cron-job-for-every-weekday-at-6-am
