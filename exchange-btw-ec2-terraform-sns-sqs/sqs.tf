@@ -5,7 +5,7 @@ resource "aws_sqs_queue" "sqs_queue" {
 
 resource "aws_sns_topic_subscription" "sns_to_sqs" {
   provider  = aws.account_b
-  topic_arn = "arn:aws:sns:us-east-1:ACCOUNT_A_ID:sns-topic"  # replace ACCOUNT_A_ID
+  topic_arn = "arn:aws:sns:us-east-1:${var.aws_account_a}:sns-topic"  # replace ACCOUNT_A_ID
   protocol  = "sqs"
   endpoint  = aws_sqs_queue.sqs_queue.arn
 }
